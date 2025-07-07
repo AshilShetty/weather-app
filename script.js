@@ -1,4 +1,4 @@
-const apiKey = "9f6178888e424c3ea5955723250707"; // Replace with your actual WeatherAPI key
+const apiKey = "API KEY"; // Replace with your actual WeatherAPI key
 let searchHistory = [];
 
 async function getWeather() {
