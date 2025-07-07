@@ -1,5 +1,5 @@
 const apiKey = "API KEY"; // Replace with your actual WeatherAPI key
-let searchHistory = [];
+
 
 async function getWeather() {
   const city = document.getElementById("cityInput").value.trim();
