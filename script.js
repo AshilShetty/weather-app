@@ -63,17 +63,4 @@ async function getWeather() {
   }
 }
 
-function updateSearchHistory() {
-  const historyDiv = document.getElementById("searchHistory");
-  historyDiv.innerHTML = "<h3>Search History:</h3>";
-  searchHistory.slice().reverse().forEach(city => {
-    const cityItem = document.createElement("div");
-    cityItem.className = "history-item";
-    cityItem.textContent = city;
-    cityItem.onclick = () => {
-      document.getElementById("cityInput").value = city;
-      getWeather();
-    };
-    historyDiv.appendChild(cityItem);
-  });
-}
+
